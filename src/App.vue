@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Shanaka Prince" />
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Shanaka Prince" />
+    <PAGES />
+  </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import PAGES from "./components/PAGES.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    PAGES,
   },
 };
 </script>
