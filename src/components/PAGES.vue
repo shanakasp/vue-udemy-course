@@ -6,6 +6,8 @@
     <h3>User Data: {{ getData() }}</h3>
     <h3>{{ getData().email }}</h3>
     <h3>{{ getData().phoneNumber }}</h3>
+    <button @click="handleClick">Click Here</button>
+    <button v-on="{ click: handleClick }">submit</button>
   </div>
 </template>
 
@@ -29,6 +31,9 @@ export default {
         email: "abc@gmail.com",
         phoneNumber: 123456,
       };
+    },
+    handleClick() {
+      console.log("handleClick 123");
     },
   },
 };
