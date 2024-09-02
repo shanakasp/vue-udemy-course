@@ -6,15 +6,17 @@
     <TwoWayBinding />
     <MultiInput />
     <ConditionalRendering />
+    <ForLoopArray />
   </div>
 </template>
 
 <script>
+import ConditionalRendering from "./components/ConditionalRendering.vue";
+import ForLoopArray from "./components/ForLoopArray.vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import MultiInput from "./components/MultiInput.vue";
 import PAGES from "./components/PAGES.vue";
 import TwoWayBinding from "./components/TwoWayBinding.vue";
-import MultiInput from "./components/MultiInput.vue";
-import ConditionalRendering from "./components/ConditionalRendering.vue";
 export default {
   name: "App",
   components: {
@@ -23,6 +25,7 @@ export default {
     TwoWayBinding,
     ConditionalRendering,
     MultiInput,
+    ForLoopArray,
   },
 };
 </script>
