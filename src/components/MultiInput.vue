@@ -49,7 +49,6 @@ export default {
 </script>
 
 <style scoped>
-/* Add any styles specific to this component here */
 h1,
 h2 {
   color: #2c3e50;

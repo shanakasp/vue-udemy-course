@@ -4,24 +4,25 @@
     <HelloWorld msg="Shanaka Prince" />
     <PAGES />
     <TwoWayBinding />
-    <!-- Add the MultiInput component here -->
     <MultiInput />
+    <ConditionalRendering />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import PAGES from "./components/PAGES.vue";
-import TwoWayBinding from "./components/TwoWayBinding.vue"; // Make sure to include the .vue extension
-import MultiInput from "./components/MultiInput.vue"; // Import the new component
-
+import TwoWayBinding from "./components/TwoWayBinding.vue";
+import MultiInput from "./components/MultiInput.vue";
+import ConditionalRendering from "./components/ConditionalRendering.vue";
 export default {
   name: "App",
   components: {
     HelloWorld,
     PAGES,
     TwoWayBinding,
-    MultiInput, // Register the new component
+    ConditionalRendering,
+    MultiInput,
   },
 };
 </script>
