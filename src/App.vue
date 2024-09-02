@@ -4,13 +4,16 @@
     <HelloWorld msg="Shanaka Prince" />
     <PAGES />
     <TwoWayBinding />
+    <!-- Add the MultiInput component here -->
+    <MultiInput />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import PAGES from "./components/PAGES.vue";
-import TwoWayBinding from "./components/TwoWayBinding";
+import TwoWayBinding from "./components/TwoWayBinding.vue"; // Make sure to include the .vue extension
+import MultiInput from "./components/MultiInput.vue"; // Import the new component
 
 export default {
   name: "App",
@@ -18,6 +21,7 @@ export default {
     HelloWorld,
     PAGES,
     TwoWayBinding,
+    MultiInput, // Register the new component
   },
 };
 </script>
