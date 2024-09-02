@@ -1,18 +1,21 @@
 <template>
-  <h1>Child Component, Message from parent: {{ message }}</h1>
+  <div>
+    <h2>Child Component</h2>
+    <p>Message from Parent: {{ parentData }}</p>
+    <button @click="sendDataToParent">Send Data to Parent</button>
+  </div>
 </template>
 
 <script>
 export default {
   name: "ChildComponent",
   props: {
-    message: String,
+    parentData: String,
+  },
+  methods: {
+    sendDataToParent() {
+      this.$emit("childData", "Hello from Child!");
+    },
   },
 };
 </script>
-
-<style scoped>
-h1 {
-  color: red;
-}
-</style>

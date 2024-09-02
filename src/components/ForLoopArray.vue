@@ -8,7 +8,11 @@
         {{ index + 1 }}. {{ item.name }} - {{ item.price }}$
       </li>
     </ul>
-    <ChildComponent :message="ParentMessage" />
+    <ChildComponent
+      :parentData="parentMessage"
+      @childData="receiveDataFromChild"
+    />
+    <p>Message from Child: {{ dataFromChild }}</p>
   </div>
 </template>
 
@@ -29,8 +33,13 @@ export default {
         { name: "Date", price: 3.0 },
         { name: "Elderberry", price: 1.5 },
       ],
-      ParentMessage: "Hello from Parent Component",
+      parentMessage: "Hello from Parent Component",
     };
+  },
+  methods: {
+    receiveDataFromChild(data) {
+      this.dataFromChild = data;
+    },
   },
 };
 </script>
