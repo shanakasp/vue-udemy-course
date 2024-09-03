@@ -7,16 +7,19 @@
     <MultiInput />
     <ConditionalRendering />
     <ForLoopArray />
+    <FormSignup />
   </div>
 </template>
 
 <script>
 import ConditionalRendering from "./components/ConditionalRendering.vue";
 import ForLoopArray from "./components/ForLoopArray.vue";
+import FormSignup from "./components/FormSignup.vue";
 import HelloWorld from "./components/HelloWorld.vue";
 import MultiInput from "./components/MultiInput.vue";
 import PAGES from "./components/PAGES.vue";
 import TwoWayBinding from "./components/TwoWayBinding.vue";
+
 export default {
   name: "App",
   components: {
@@ -26,6 +29,7 @@ export default {
     ConditionalRendering,
     MultiInput,
     ForLoopArray,
+    FormSignup,
   },
 };
 </script>
