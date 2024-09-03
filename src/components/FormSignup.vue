@@ -16,7 +16,17 @@
     />
   </label>
 
+  <label>Hobbies:</label>
+  <br />
+  <input type="checkbox" value="cricket" v-model="form.hobbies" /> Cricket
+  <input type="checkbox" value="football" v-model="form.hobbies" /> Football
+  <input type="checkbox" value="basketball" v-model="form.hobbies" /> Basketball
+  <input type="checkbox" value="tennis" v-model="form.hobbies" /> Tennis
+
   <button v-on:click="login">Submit Login details</button>
+
+  <br /><br />
+  {{ form }}
 </template>
 
 <script>
@@ -27,6 +37,7 @@ export default {
       form: {
         username: "",
         password: "",
+        hobbies: [],
       },
     };
   },
