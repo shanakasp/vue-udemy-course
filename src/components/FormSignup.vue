@@ -23,6 +23,14 @@
   <input type="checkbox" value="basketball" v-model="form.hobbies" /> Basketball
   <input type="checkbox" value="tennis" v-model="form.hobbies" /> Tennis
 
+  <label>Select you gender</label>
+  <select v-model="form.gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+
+  <br /><br />
   <button v-on:click="login">Submit Login details</button>
 
   <br /><br />
@@ -38,6 +46,7 @@ export default {
         username: "",
         password: "",
         hobbies: [],
+        gender: [],
       },
     };
   },
