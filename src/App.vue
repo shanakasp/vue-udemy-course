@@ -8,6 +8,7 @@
     <ConditionalRendering />
     <ForLoopArray />
     <FormSignup />
+    <WatchersVue />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import MultiInput from "./components/MultiInput.vue";
 import PAGES from "./components/PAGES.vue";
 import TwoWayBinding from "./components/TwoWayBinding.vue";
+import WatchersVue from "./components/WatchersVue.vue";
 
 export default {
   name: "App",
@@ -30,6 +32,7 @@ export default {
     MultiInput,
     ForLoopArray,
     FormSignup,
+    WatchersVue,
   },
 };
 </script>
