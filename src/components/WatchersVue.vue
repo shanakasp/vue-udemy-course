@@ -5,10 +5,21 @@
     <button v-on:click="increment">+</button>
     <button v-on:click="decrement">-</button>
     <ChildSlot data="Meta">
-      <p>
-        This is content passed to the slot from the parent component.
-      </p></ChildSlot
-    >
+      <!-- Named slot for string -->
+      <template v-slot:string>
+        <p>This is a string passed to the string slot from the parent.</p>
+      </template>
+
+      <!-- Named slot for number -->
+      <template v-slot:number>
+        <p>{{ 42 }}</p>
+      </template>
+
+      <!-- Named slot for image -->
+      <template v-slot:image>
+        <img src="https://via.placeholder.com/150" alt="Sample Image" />
+      </template>
+    </ChildSlot>
   </div>
 </template>
 

@@ -9,6 +9,7 @@
     <ForLoopArray />
     <FormSignup />
     <WatchersVue />
+    <HomeDynamicComponent />
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import MultiInput from "./components/MultiInput.vue";
 import PAGES from "./components/PAGES.vue";
 import TwoWayBinding from "./components/TwoWayBinding.vue";
 import WatchersVue from "./components/WatchersVue.vue";
+import HomeDynamicComponent from "./components/HomeDynamicComponent";
 
 export default {
   name: "App",
@@ -33,6 +35,7 @@ export default {
     ForLoopArray,
     FormSignup,
     WatchersVue,
+    HomeDynamicComponent,
   },
 };
 </script>
