@@ -4,12 +4,21 @@
     <h2>{{ count }}</h2>
     <button v-on:click="increment">+</button>
     <button v-on:click="decrement">-</button>
+    <ChildSlot data="Meta">
+      <p>
+        This is content passed to the slot from the parent component.
+      </p></ChildSlot
+    >
   </div>
 </template>
 
 <script>
+import ChildSlot from "./ChildSlot";
 export default {
   name: "WatcherVue",
+  components: {
+    ChildSlot,
+  },
   data() {
     return {
       count: 0,
