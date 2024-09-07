@@ -2,9 +2,10 @@
 <template>
   <div id="app">
     <nav>
-      <!-- Navigation Links -->
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <!-- Navigation Links with custom classes -->
+
+      <router-link to="/" class="nav-link">Home</router-link> |
+      <router-link to="/about" class="nav-link">About</router-link>
     </nav>
 
     <!-- Route View -->
@@ -19,12 +20,19 @@ export default {
 </script>
 
 <style>
-/* Optional: Add some basic styling for the navigation */
+/* Styling for the navigation and router links */
 nav {
   margin-bottom: 20px;
 }
-router-link {
+
+.nav-link {
   margin-right: 10px;
   text-decoration: none;
+  color: rgb(19, 204, 111);
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: rgb(255, 102, 102); /* Change color on hover */
 }
 </style>
