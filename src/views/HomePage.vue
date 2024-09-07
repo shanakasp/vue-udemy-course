@@ -23,16 +23,16 @@ export default {
   name: "HomePage",
   data() {
     return {
-      posts: [], // Correctly initialize posts as an empty array
+      posts: [],
     };
   },
+
   created() {
-    // Fetch posts when the component is created
     this.fetchPosts();
   },
+
   methods: {
     goToAbout() {
-      // Navigate to the About page
       this.$router.push("/about");
     },
     async fetchPosts() {
@@ -51,7 +51,6 @@ export default {
 </script>
 
 <style scoped>
-/* Add any optional styles here */
 button {
   margin-top: 20px;
   padding: 10px;
