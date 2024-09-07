@@ -1,6 +1,6 @@
 # vue-website-figma
 
-Please read my article on this topic
+To read my article on this topic
 
 https://medium.com/@shanakaprince/a-beginners-guide-to-vue-js-lifecycle-methods-with-practical-examples-d85ff7d96646
 
