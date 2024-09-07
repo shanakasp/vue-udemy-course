@@ -1,3 +1,4 @@
+import PageNotFound from "@/views/PageNotFound.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import About from "../views/AboutPage.vue";
 import Home from "../views/HomePage.vue";
@@ -13,6 +14,12 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
+  },
+
+  {
+    path: "/:pathMatch(.*)*",
+    name: "PageNotFound",
+    component: PageNotFound,
   },
 ];
 
