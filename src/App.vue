@@ -1,52 +1,30 @@
+<!-- src/App.vue -->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Shanaka Prince" />
-    <PAGES />
-    <TwoWayBinding />
-    <MultiInput />
-    <ConditionalRendering />
-    <ForLoopArray />
-    <FormSignup />
-    <WatchersVue />
-    <HomeDynamicComponent />
+    <nav>
+      <!-- Navigation Links -->
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
+
+    <!-- Route View -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import ConditionalRendering from "./components/ConditionalRendering.vue";
-import ForLoopArray from "./components/ForLoopArray.vue";
-import FormSignup from "./components/FormSignup.vue";
-import HelloWorld from "./components/HelloWorld.vue";
-import MultiInput from "./components/MultiInput.vue";
-import PAGES from "./components/PAGES.vue";
-import TwoWayBinding from "./components/TwoWayBinding.vue";
-import WatchersVue from "./components/WatchersVue.vue";
-import HomeDynamicComponent from "./components/HomeDynamicComponent";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-    PAGES,
-    TwoWayBinding,
-    ConditionalRendering,
-    MultiInput,
-    ForLoopArray,
-    FormSignup,
-    WatchersVue,
-    HomeDynamicComponent,
-  },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+/* Optional: Add some basic styling for the navigation */
+nav {
+  margin-bottom: 20px;
+}
+router-link {
+  margin-right: 10px;
+  text-decoration: none;
 }
 </style>
