@@ -20,15 +20,18 @@
         <img src="https://via.placeholder.com/150" alt="Sample Image" />
       </template>
     </ChildSlot>
+    <LifecycleDemo />
   </div>
 </template>
 
 <script>
 import ChildSlot from "./ChildSlot";
+import LifecycleDemo from "./LifecycleDemo";
 export default {
   name: "WatcherVue",
   components: {
     ChildSlot,
+    LifecycleDemo,
   },
   data() {
     return {
